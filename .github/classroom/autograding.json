@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Responsible AI",
+      "setup": "sudo -H pip3 install numpy pytest",
+      "run": "pytest 'Responsible_AI/test_calculate_metric.py'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
