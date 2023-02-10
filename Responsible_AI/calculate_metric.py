@@ -16,6 +16,7 @@ def load_confusion_matrices():
 load_confusion_matrices()
 
 def demographic_parity():
+    i = 0
     return 
 
 demographic_parity()
