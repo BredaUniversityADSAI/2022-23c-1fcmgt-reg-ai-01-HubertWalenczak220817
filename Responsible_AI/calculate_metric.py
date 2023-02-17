@@ -1,12 +1,12 @@
 import numpy as np
 
 def load_confusion_matrices():
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -20,12 +20,12 @@ def demographic_parity():
     #DPUG - Demographic parity unprivileged group,
     #AD_DPUP - Absolute difference of Demographic Parity between unprivileged and privileged group
 
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -43,12 +43,12 @@ def predictive_parity():
     #PPPG - 
     #AD_PUP - 
     
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -69,12 +69,12 @@ def equalized_odds():
     #AD_TPR - Absolute difference TPR
     #AD_TNR - Absolute difference TNR
 
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -99,12 +99,12 @@ def conditional_use_accuracy_equality():
     #NPVP - NPV privilaged group
     #NPVU - NPV unprivilaged group
 
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -127,12 +127,12 @@ def equal_selection_parity():
     #ESPP - Equal Selection Parity privileged group,
     #AD_ESP - Absolute difference of Equal Selection Parity between unprivileged and privileged group
 
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -150,12 +150,12 @@ def equal_opportunity():
     #TPRU - TPR unprivilaged group 
     #AD_TPR - Absolute difference TPR
 
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
@@ -174,12 +174,12 @@ def predictive_equality():
     #TNRU - TNR unprivilaged group
     #AD_TNR - Absolute difference TNR
 
-    cm_priv = np.load('./confusion_matrix_priv_female.npy')
+    cm_priv = np.load('./Responsible_AI/confusion_matrix_priv_female.npy')
     tn_priv = cm_priv[0][0]
     fp_priv = cm_priv[0][1]
     fn_priv = cm_priv[1][0]
     tp_priv = cm_priv[1][1]
-    cm_unpriv = np.load('./confusion_matrix_unpriv_male.npy')
+    cm_unpriv = np.load('./Responsible_AI/confusion_matrix_unpriv_male.npy')
     tn_unpriv = cm_unpriv[0][0]
     fp_unpriv = cm_unpriv[0][1]
     fn_unpriv = cm_unpriv[1][0]
