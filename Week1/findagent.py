@@ -29,5 +29,3 @@ print("----------------------")
 get_agent_codes("cat")
 get_agent_codes("dog")
 get_agent_codes("bird")
-
-
