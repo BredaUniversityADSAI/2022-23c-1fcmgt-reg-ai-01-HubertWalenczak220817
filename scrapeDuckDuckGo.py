@@ -2,14 +2,8 @@ import DuckDuckGoImages as ddg
 def scrape(query):
     ddg.download(query, folder='./prepareData/'+query, max_urls=1000)
 
-scrape('white man')
-scrape('white woman')
-scrape('black man')
-scrape('black woman')
-scrape('asian man')
-scrape('asian woman')
+scrape('crop field -animal -animals -human -humans')
+scrape('plains -animal -animals -human -humans')
+scrape('forest -animal -animals -human -humans')
+scrape('city -animal -animals -human -humans')
 
-scrape('wild boar')
-scrape('dear')
-scrape('wolf')
-scrape('fox')
